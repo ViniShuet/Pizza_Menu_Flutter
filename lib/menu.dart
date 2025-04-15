@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pizzamenu/menu_item.dart';
+import 'package:pizzamenu/pizza_data.dart';
 
 class Menu extends StatelessWidget {
   const Menu({super.key});
 
-  // This widget is the root of your application.
-  @override
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,12 +14,10 @@ class Menu extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              MenuItem(),
-              MenuItem(),
-              MenuItem(),
-              MenuItem(),
-              MenuItem(),
-              MenuItem(),
+              MenuItem(pizza: pizzaData[0]),
+              MenuItem(pizza: pizzaData[1]),
+              MenuItem(pizza: pizzaData[2]),
+              MenuItem(pizza: pizzaData[3]),
             ]
              ),
         ),
