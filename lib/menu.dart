@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pizzamenu/menu_item.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Menu extends StatelessWidget {
+  const Menu({super.key});
 
   // This widget is the root of your application.
   @override
