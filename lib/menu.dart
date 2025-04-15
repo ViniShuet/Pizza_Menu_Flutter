@@ -13,14 +13,16 @@ class Menu extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Column(
-            children: [
-              MenuItem(pizza: pizzaData[0]),
-              MenuItem(pizza: pizzaData[1]),
-              MenuItem(pizza: pizzaData[2]),
-              MenuItem(pizza: pizzaData[3]),
-            ]
+            children: _buildPizzas(),
              ),
         ),
     );
   }
+
+//Metodo que retorna uma lista
+List<MenuItem> _buildPizzas(){
+
+
+}
+
 }

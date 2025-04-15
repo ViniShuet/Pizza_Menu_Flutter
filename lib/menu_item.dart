@@ -26,21 +26,21 @@ class MenuItem extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Texto 1",
+                      pizza.name,
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
-                      "Texto 2",
+                      pizza.ingredients,
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.black87,
                       ),
                     ),
                     Text(
-                      "Texto 3",
+                      "${pizza.price}",
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.black54,
