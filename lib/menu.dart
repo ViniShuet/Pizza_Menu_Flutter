@@ -21,7 +21,15 @@ class Menu extends StatelessWidget {
 
 //Metodo que retorna uma lista
 List<MenuItem> _buildPizzas(){
+  //Instanciando a lista
+  List<MenuItem> listaPizzas = [];
 
+  // Pizza => PizzaCard
+  for (var item in pizzaData) {
+    listaPizzas.add(MenuItem(pizza: item));
+  }
+
+  return listaPizzas;
 
 }
 
