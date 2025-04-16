@@ -20,11 +20,13 @@ class Menu extends StatelessWidget {
                    ),
               ),
             ),
+            if(isOpen())
             Padding(
               padding: const EdgeInsets.all(12.0),
               child: ElevatedButton(
                 onPressed: () {}, 
-                child: Text("Order now!")),
+                child: Text("Order now!")
+                ),
             )
           ],
         ),
@@ -43,6 +45,18 @@ List<MenuItem> _buildPizzas(){
 
   return listaPizzas;
 
+}
+
+bool isOpen(){
+  var horaInicial = 18;
+  var horaFinal = 23;
+
+  var horaAtual = DateTime.now().hour;
+
+  if(horaAtual >= horaInicial && horaAtual < horaFinal){
+    return true;
+  }
+  return false;
 }
 
 }
